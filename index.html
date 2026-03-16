@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beautiful Noku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="hero">
+        <svg class="heart-bg" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 28.251c-.272 0-.544-.104-.751-.311l-11.458-11.458c-2.912-2.912-2.912-7.633 0-10.545 2.809-2.809 7.37-2.903 10.294-.308l1.915 1.703 1.915-1.703c2.924-2.595 7.485-2.501 10.294.308 2.912 2.912 2.912 7.633 0 10.545l-11.458 11.458c-.207.207-.479.311-.751.311z"/>
+        </svg>
+        <h1>For Noku</h1>
+        <p>A little piece of light for the girl with the most amazing heart.</p>
+    </section>
+
+    <section id="affirmations">
+        <h2 class="section-title reveal">Words for Your Soul</h2>
+        <div class="card-container">
+            <div class="card glass reveal">
+                <p>"You have the most amazing heart, Noku. Your kindness leaves a lasting impact on everyone you meet."</p>
+                <span class="verse-ref">Pure Truth</span>
+            </div>
+            <div class="card glass reveal">
+                <p>"Your presence brings warmth and joy to any room. You are truly a light in this world."</p>
+                <span class="verse-ref">A Fact</span>
+            </div>
+            <div class="card glass reveal">
+                <p>"You are beautiful, not just on the outside, but your soul is genuinely radiant."</p>
+                <span class="verse-ref">Unfading Beauty</span>
+            </div>
+            <div class="card glass reveal">
+                <p>"Your thoughtfulness always amazes me. You are a rare and precious gem."</p>
+                <span class="verse-ref">Rare Gem</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="verses">
+        <h2 class="section-title reveal">Heaven's Promises</h2>
+        <div class="card-container">
+            <div class="card glass reveal">
+                <p>"I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well."</p>
+                <span class="verse-ref">Psalm 139:14</span>
+            </div>
+            <div class="card glass reveal">
+                <p>"You are altogether beautiful, my darling; there is no flaw in you."</p>
+                <span class="verse-ref">Song of Songs 4:7</span>
+            </div>
+            <div class="card glass reveal">
+                <p>"She is clothed with strength and dignity; she can laugh at the days to come."</p>
+                <span class="verse-ref">Proverbs 31:25</span>
+            </div>
+            <div class="card glass reveal">
+                <p>"God is within her, she will not fall; God will help her at break of day."</p>
+                <span class="verse-ref">Psalm 46:5</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="questions">
+        <h2 class="section-title reveal">Just Between Us</h2>
+        <div class="form-container glass reveal">
+            <!-- Replace YOUR_ID_HERE with your Formspree ID from formspree.io -->
+            <form id="nokuForm" action="https://formspree.io/f/xojkkyvn" method="POST">
+                <input type="hidden" name="_subject" value="New Message from Noku! ❤️">
+                <div class="form-group">
+                    <label for="mood">How are you feeling right now, Noku?</label>
+                    <textarea id="mood" name="mood" placeholder="Tell me what's on your heart..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="wants">What's one thing you want right now?</label>
+                    <textarea id="wants" name="wants" placeholder="Anything at all..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="feelings">How do you truly feel about us?</label>
+                    <textarea id="feelings" name="feelings" placeholder="Be as honest as you want..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">Send to My Heart</button>
+            </form>
+            <div id="thankYou" style="display: none; text-align: center; margin-top: 20px;">
+                <p style="font-family: 'Dancing Script', cursive; font-size: 1.5rem; color: var(--accent-pink);">Thank you for sharing with me, my love. I've received your message. ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hidden Admin Panel -->
+    <div id="adminPanel" class="glass" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 800px; max-height: 80vh; overflow-y: auto; z-index: 2000; padding: 40px;">
+        <h2 style="font-family: 'Dancing Script', cursive; color: var(--accent-pink); margin-bottom: 20px;">Responses from Noku</h2>
+        <div id="responsesContainer"></div>
+        <button onclick="document.getElementById('adminPanel').style.display='none'" class="submit-btn" style="margin-top: 20px;">Close Panel</button>
+    </div>
+
+    <footer>
+        <p>Always yours, always cheering for you.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
